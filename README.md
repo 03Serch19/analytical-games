@@ -3,4 +3,4 @@
 Pequeña suite de sutiles juegos
 
 
-Mayo 2025
+2025
