@@ -1,1 +1,3 @@
-# analytical-games
+# Analytical-games
+
+Pequeña suite de sutiles juegos
