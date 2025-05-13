@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Games by Serch19</title>
+    <link rel="icon" href="img/juego-de-mesa.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #1a237e;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #283593;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #bbdefb;
+        }
+
+        .game-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .game-selector button {
+            background-color: #1e88e5;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-selector button:hover {
+            background-color: #1565c0;
+        }
+
+        #game-container {
+            margin-top: 20px;
+        }
+
+        #game-container > div {
+            display: none; /* Ocultar todos los contenedores de juego por defecto */
+        }
+
+        #game-container > div.active {
+            display: block; /* Mostrar el contenedor del juego activo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selecciona un Juego</h1>
+        <div class="game-selector">
+            <button data-game="tic-tac-toe">X y Cero</button>
+            <button data-game="guess-number">Adivina el Número</button>
+            <button data-game="simon-says">Simón Dice</button>
+            <button data-game="coming-soon">Otro Juego (Próximamente)</button>
+        </div>
+        <div id="game-container">
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/tic-tac-toe.js"></script>
+    <script src="js/guess-number.js"></script>
+    <script src="js/simon-says.js"></script>
+    <script src="js/"></script>
+</body>
+</html>
